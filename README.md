@@ -1,29 +1,11 @@
 # vue-win-3.1
 
-## Project setup
-```
-npm install
-```
+This is a small proof of concept Vue application that emulates the look and feel of Windows 3.1.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+##  Why?
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Partly "just because" but also to act as a starting point for a modern Vue app that will imitate early 90's hypertext programs.
 
-### Run your tests
-```
-npm run test
-```
+## Credits
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Thanks to Matthijs Lanser for creating the Windows 3.1 GUI CSS styling which I used as a starting point for this.
