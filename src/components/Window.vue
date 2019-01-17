@@ -3,24 +3,7 @@
     <div class="window">
         <titlebar titleheader = "Program Manager"></titlebar>
         <menubar :menuitems="menuitems"></menubar>
-        <div class="icons">
-        <div class="icon">
-            <img src="http://windowsfreak.de/icons/win3.11/folder.png" />
-            <div class="text">Accessories</div>
-        </div>
-        <div class="icon">
-            <img src="http://windowsfreak.de/icons/win3.11/folder.png" />
-            <div class="text">Games</div>
-        </div>
-        <div class="icon">
-            <img src="http://windowsfreak.de/icons/win3.11/folder.png" />
-            <div class="text">Applications</div>
-        </div>
-        <div class="icon">
-            <img src="http://windowsfreak.de/icons/win3.11/folder.png" />
-            <div class="text">main</div>
-        </div>
-        </div>
+        <icon-set :icons="icons"></icon-set>
   </div>
   <div class="bottomright handle"></div>
   <div class="topright handle"></div>
@@ -40,13 +23,16 @@
 <script>
 import Titlebar from './Titlebar'
 import Menubar from './Menubar'
+import IconSet from './IconSet'
 export default {
     components: {
         'titlebar': Titlebar,
-        'menubar': Menubar
+        'menubar': Menubar,
+        'icon-set': IconSet
     },
     props: {
-        'menuitems': Array
+        'menuitems': Array,
+        'icons': Array
     }
 }
 </script>
