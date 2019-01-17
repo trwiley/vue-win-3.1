@@ -1,18 +1,7 @@
 <template>
     <div class="window-border ">
     <div class="window">
-        <div class="title">
-        <div class="button close" id="window">
-            &#8212;
-        </div>
-        Program Manager
-        <div class="button" id="max">
-            &#9650;
-        </div>
-        <div class="button" id="min">
-            &#9660;
-        </div>
-        </div>
+        <titlebar titleheader = "Program Manager"></titlebar>
         <div class="menubar">
         <div class="menuitem">
             <span style="text-decoration:underline;">F</span>ile
@@ -62,7 +51,11 @@
 </template>
 
 <script>
+import Titlebar from './Titlebar'
 export default {
+    components: {
+        'titlebar': Titlebar
+    }
     
 }
 </script>
