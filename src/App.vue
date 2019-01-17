@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <window></window>
+    <window :menuitems="menuitems"></window>
   </div>
 </template>
 
@@ -10,6 +10,14 @@ export default {
   name: 'app',
   components: {
     'window': Window
+  },
+  data () {
+    return {
+      'menuitems': []
+    }
+  },
+  created() {
+    this.menuitems = ['File', 'Option', 'Windows', 'Help']
   }
 }
 </script>

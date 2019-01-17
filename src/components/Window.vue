@@ -2,20 +2,7 @@
     <div class="window-border ">
     <div class="window">
         <titlebar titleheader = "Program Manager"></titlebar>
-        <div class="menubar">
-        <div class="menuitem">
-            <span style="text-decoration:underline;">F</span>ile
-        </div>
-        <div class="menuitem">
-            <span style="text-decoration:underline;">O</span>ptions
-        </div>
-        <div class="menuitem">
-            <span style="text-decoration:underline;">W</span>indows
-        </div>
-        <div class="menuitem">
-            <span style="text-decoration:underline;">H</span>elp
-        </div>
-        </div>
+        <menubar :menuitems="menuitems"></menubar>
         <div class="icons">
         <div class="icon">
             <img src="http://windowsfreak.de/icons/win3.11/folder.png" />
@@ -52,11 +39,15 @@
 
 <script>
 import Titlebar from './Titlebar'
+import Menubar from './Menubar'
 export default {
     components: {
-        'titlebar': Titlebar
+        'titlebar': Titlebar,
+        'menubar': Menubar
+    },
+    props: {
+        'menuitems': Array
     }
-    
 }
 </script>
 
