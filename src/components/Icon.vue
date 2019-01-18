@@ -7,7 +7,7 @@
 <script>
 export default {
     props: {
-        'imageSource': String,
+        'image-source': String,
         'caption': String
     }
 }

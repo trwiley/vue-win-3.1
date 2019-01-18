@@ -9,13 +9,7 @@
   <div class="topright handle"></div>
   <div class="topleft handle"></div>
   <div class="bottomleft handle"></div>
-  <div id="context-menu" style="display:none">
-    <div class="context-item"><span style="text-decoration:underline;">R</span>estore</div>
-    <div class="context-item"><span style="text-decoration:underline;">M</span>ove</div>
-    <div class="context-item"><span style="text-decoration:underline;">S</span>ize</div>
-    <div class="context-item">Mi<span style="text-decoration:underline;">n</span>imize</div>
-    <div class="context-item">Ma<span style="text-decoration:underline;">x</span>imize</div>
-  </div>
+  <context-menu></context-menu>
 </div>
     
 </template>
@@ -24,11 +18,13 @@
 import Titlebar from './Titlebar'
 import Menubar from './Menubar'
 import IconSet from './IconSet'
+import ContextMenu from './ContextMenu'
 export default {
     components: {
         'titlebar': Titlebar,
         'menubar': Menubar,
-        'icon-set': IconSet
+        'icon-set': IconSet,
+        'context-menu': ContextMenu
     },
     props: {
         'menuitems': Array,
