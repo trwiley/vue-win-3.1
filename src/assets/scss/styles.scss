@@ -1,12 +1,36 @@
 // global SASS variables..
+// background
 $win-bg: teal;
+
+// fontz
 $win-font: fixedsys, consolas, monospace;
+
+// window
 $win-window-bg: #fff;
+
+// border
 $win-border-color: #000;
+$win-border-bg: #cdcdcd;
+// title
 $win-title-bg: #000;
 $win-title-color: #fff;
+
+//  button
 $win-button-color: #c0c0c0;
 $win-button-txt: #000;
+
+// menu
+$win-active-menu: #000;
+
+// icon
+$win-icons-bg: #fff;
+$win-icon-active-text: #fff;
+$win-icon-active-bg: #000;
+
+// context menu
+$win-context-bg: #fff;
+$win-context-active-bg: #000;
+$win-context-active-color: #fff;
 
 body {
     background-color: $win-bg;
@@ -68,48 +92,51 @@ body {
   
   .menubar {
     height: 24px;
-    border-bottom: solid 1px #191919;
+    border-bottom: solid 1px $win-border-color;
+
+    .menuitem {
+      line-height: 24px;
+      padding: 0px 7px;
+      display: inline-block;
+
+      :active {
+        background: #000080;
+        color: #fff;
+      }
+    }
   }
-  
-  .menubar .menuitem {
-    line-height: 24px;
-    padding: 0px 7px;
-    display: inline-block;
-  }
-  
-  .menubar .menuitem:active {
-    background: #000080;
-    color: #fff;
-  }
-  
+
   .icons {
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
     padding: 15px 5px;
-    background: #fff;
+    background: $win-icons-bg;
     z-index: 5;
+
+    .icon {
+      display: inline-block;
+      margin: 00px 10px;
+      width: 80px;
+      font-size: 12px;
+      text-align: center;
+      
+      :active > .text {
+        background: $win-icon-active-bg;
+        color: $win-icon-active-text;
+      }
+
+    }  
   }
-  
-  .icons .icon {
-    display: inline-block;
-    margin: 00px 10px;
-    width: 80px;
-    font-size: 12px;
-    text-align: center;
-  }
-  
-  .icon:active > .text {
-    background: #000080;
-    color: #fff;
-  }
+
+ 
   
   .handle {
     position:absolute;
     height: 29px;
     width: 29px;
-    border:solid 1px #000;
+    border:solid 1px $win-border-color;
   }
   
   .topright {
@@ -137,10 +164,10 @@ body {
   }
   
   .window-border {
-    background: #cdcdcd;
+    background: $win-border-bg;
     position: absolute;
     padding: 2px 4px 4px 2px;
-    border: 1px solid #000;  
+    border: 1px solid $win-border-color;  
     width: 550px;
     height: 300px;
     top: 10%;
@@ -173,22 +200,24 @@ body {
   
   #context-menu {
     position: absolute;
-    border: solid 1px #000;
+    border: solid 1px $win-border-color;
     width: 150px;
     margin: -1px;
     margin-top: 5px;
     z-index:999999999;
-    background: #fff;
+    background: $win-context-bg;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,.5);
-    
+
+    .context-item {
+      padding: 5px;
+      font-weight: 600;
+      padding: 5px;
+
+      :active {
+        background: $win-context-active-bg;
+        color: $win-context-active-color;
+      }
+    }
   }
   
-  #context-menu .context-item {
-    padding: 5px;
-    font-weight: 600;
-    padding: 5px;
-  }
-  #context-menu .context-item:active {
-    background: #000080;
-    color: #fff;
-  }
+  
