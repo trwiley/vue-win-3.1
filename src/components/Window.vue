@@ -1,10 +1,10 @@
 <template>
-    <div class="window-border ">
+  <div class="window-border ">
     <div class="window">
-        <titlebar titleheader = "Program Manager"></titlebar>
-        <menubar :menuitems="menuitems"></menubar>
-        <icon-set :icons="icons"></icon-set>
-  </div>
+      <titlebar titleheader = "Program Manager"></titlebar>
+      <menubar :menuitems="menuitems"></menubar>
+      <icon-set :icons="icons"></icon-set>
+    </div>
   <div class="bottomright handle"></div>
   <div class="topright handle"></div>
   <div class="topleft handle"></div>
@@ -24,7 +24,7 @@ export default {
         'titlebar': Titlebar,
         'menubar': Menubar,
         'icon-set': IconSet,
-        'context-menu': ContextMenu
+        'context-menu': ContextMenu,
     },
     props: {
         'menuitems': Array,

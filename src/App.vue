@@ -1,15 +1,19 @@
 <template>
   <div id="app">
-    <window :menuitems="menuitems" :icons="icondata"></window>
+    <drag-it-dude>
+      <window :menuitems="menuitems" :icons="icondata"></window>
+    </drag-it-dude>
   </div>
 </template>
 
 <script>
 import Window from './components/Window'
+import DragItDude from '../node_modules/vue-drag-it-dude/src/DragItDude.vue'
 export default {
   name: 'app',
   components: {
-    'window': Window
+    'window': Window,
+    'drag-it-dude': DragItDude
   },
   data () {
     return {
@@ -46,4 +50,7 @@ export default {
 </script>
 
 <style>
+#app {
+  height: 100vh;
+}
 </style>
