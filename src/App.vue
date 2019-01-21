@@ -8,7 +8,7 @@
 
 <script>
 import Window from './components/Window'
-import DragItDude from '../node_modules/vue-drag-it-dude/src/DragItDude.vue'
+import DragItDude from '../node_modules/vue-drag-it-dude/dist/vue-drag-it-dude.esm'
 export default {
   name: 'app',
   components: {
