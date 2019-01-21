@@ -18,4 +18,18 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+ @import '../assets/scss/constants.scss';
+    .menuitem {
+      line-height: 24px;
+      padding: 0px 7px;
+      display: inline-block;
+
+      :active {
+        background: #000080;
+        color: #fff;
+      }
+    }
+</style>
+
 

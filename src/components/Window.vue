@@ -52,37 +52,49 @@ export default {
       height: 26px;
       font-weight: 500;
       border-bottom: solid 1px $win-border-color;
-
-      .button {
-        background: $win-button-color;
-        color: $win-button-txt;
-        display: inline-block;
-        margin: 0px;
-        width: 20px;
-        height: 20px;
-        font-size: 12px;
-        float: right;
-        border: outset 3px;
-        line-height: 20px;
-        z-index: 5555;
-
-        :active {
-          border: inset 3px;
-        }
-
-      }
-
-      .close {
-        float: left;
-        color: #fff;
-        font-weight: 800;
-        font-size: 21px;
-        line-height: 16px;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      }
     }
   }
 
+  .handle {
+    position:absolute;
+    height: 29px;
+    width: 29px;
+    border:solid 1px $win-border-color;
+  }
+  
+  .topright {
+    top: -1px;
+    right: -1px;
+    cursor:ne-resize;
+  }
+  
+  .bottomright {
+    bottom: -1px;
+    right: -1px;
+    cursor:nw-resize;
+  }
+  
+  .topleft {
+    top: -1px;
+    left: -1px;
+    cursor:nw-resize;
+  }
+  
+  .bottomleft {
+    bottom: -1px;
+    left: -1px;
+    cursor:ne-resize;
+  }
+
+    .window-border {
+    background: $win-border-bg;
+    position: absolute;
+    padding: 2px 4px 4px 2px;
+    border: 1px solid $win-border-color;  
+    width: 550px;
+    height: 300px;
+    top: 10%;
+    left: 25%;
+  }
+
 </style>
-
-

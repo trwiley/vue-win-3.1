@@ -16,4 +16,17 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+ @import '../assets/scss/constants.scss';
+   .icons {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 15px 5px;
+    background: $win-icons-bg;
+    z-index: 5;
+   }
+</style>
+
 

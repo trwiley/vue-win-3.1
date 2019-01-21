@@ -17,3 +17,11 @@ export default {
     }   
 }
 </script>
+<style lang="scss">
+ @import '../assets/scss/constants.scss';
+  .menubar {
+    height: 24px;
+    border-bottom: solid 1px $win-border-color;
+  }
+</style>
+
