@@ -33,7 +33,55 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="scss">
+
+ @import '../assets/scss/constants.scss';
+ .window {
+    background: $win-window-bg;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 1px solid $win-border-color;
+    z-index: 9999;
+
+    .title {
+      background: $win-title-bg;
+      color: $win-title-color;
+      text-align: center;
+      line-height: 24px;
+      height: 26px;
+      font-weight: 500;
+      border-bottom: solid 1px $win-border-color;
+
+      .button {
+        background: $win-button-color;
+        color: $win-button-txt;
+        display: inline-block;
+        margin: 0px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        float: right;
+        border: outset 3px;
+        line-height: 20px;
+        z-index: 5555;
+
+        :active {
+          border: inset 3px;
+        }
+
+      }
+
+      .close {
+        float: left;
+        color: #fff;
+        font-weight: 800;
+        font-size: 21px;
+        line-height: 16px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+    }
+  }
 
 </style>
 

@@ -1,36 +1,4 @@
-// global SASS variables..
-// background
-$win-bg: teal;
-
-// fontz
-$win-font: fixedsys, consolas, monospace;
-
-// window
-$win-window-bg: #fff;
-
-// border
-$win-border-color: #000;
-$win-border-bg: #cdcdcd;
-// title
-$win-title-bg: #000;
-$win-title-color: #fff;
-
-//  button
-$win-button-color: #c0c0c0;
-$win-button-txt: #000;
-
-// menu
-$win-active-menu: #000;
-
-// icon
-$win-icons-bg: #fff;
-$win-icon-active-text: #fff;
-$win-icon-active-bg: #000;
-
-// context menu
-$win-context-bg: #fff;
-$win-context-active-bg: #000;
-$win-context-active-color: #fff;
+@import './constants.scss';
 
 body {
     background-color: $win-bg;
@@ -43,52 +11,52 @@ body {
     user-select: none;
   }
   
-  .window {
-    background: $win-window-bg;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    border: 1px solid $win-border-color;
-    z-index: 9999;
+  // .window {
+  //   background: $win-window-bg;
+  //   height: 100%;
+  //   width: 100%;
+  //   position: relative;
+  //   border: 1px solid $win-border-color;
+  //   z-index: 9999;
 
-    .title {
-      background: $win-title-bg;
-      color: $win-title-color;
-      text-align: center;
-      line-height: 24px;
-      height: 26px;
-      font-weight: 500;
-      border-bottom: solid 1px $win-border-color;
+  //   .title {
+  //     background: $win-title-bg;
+  //     color: $win-title-color;
+  //     text-align: center;
+  //     line-height: 24px;
+  //     height: 26px;
+  //     font-weight: 500;
+  //     border-bottom: solid 1px $win-border-color;
 
-      .button {
-        background: $win-button-color;
-        color: $win-button-txt;
-        display: inline-block;
-        margin: 0px;
-        width: 20px;
-        height: 20px;
-        font-size: 12px;
-        float: right;
-        border: outset 3px;
-        line-height: 20px;
-        z-index: 5555;
+  //     .button {
+  //       background: $win-button-color;
+  //       color: $win-button-txt;
+  //       display: inline-block;
+  //       margin: 0px;
+  //       width: 20px;
+  //       height: 20px;
+  //       font-size: 12px;
+  //       float: right;
+  //       border: outset 3px;
+  //       line-height: 20px;
+  //       z-index: 5555;
 
-        :active {
-          border: inset 3px;
-        }
+  //       :active {
+  //         border: inset 3px;
+  //       }
 
-      }
+  //     }
 
-      .close {
-        float: left;
-        color: #fff;
-        font-weight: 800;
-        font-size: 21px;
-        line-height: 16px;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      }
-    }
-  }
+  //     .close {
+  //       float: left;
+  //       color: #fff;
+  //       font-weight: 800;
+  //       font-size: 21px;
+  //       line-height: 16px;
+  //       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  //     }
+  //   }
+  // }
   
   .menubar {
     height: 24px;
