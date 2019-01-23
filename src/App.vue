@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <drag-it-dude>
-      <window :menuitems="menuitems" :icons="icondata"></window>
+      <window :menuitems="menuitems" :icons="icondata" height="500px" width="500px"></window>
     </drag-it-dude>
   </div>
 </template>

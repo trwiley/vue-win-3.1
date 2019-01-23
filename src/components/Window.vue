@@ -1,5 +1,5 @@
 <template>
-  <div class="window-border ">
+  <div class="window-border " :style="windowHeightWidth">
     <div class="window">
       <titlebar titleheader = "Program Manager"></titlebar>
       <menubar :menuitems="menuitems"></menubar>
@@ -28,7 +28,18 @@ export default {
     },
     props: {
         'menuitems': Array,
-        'icons': Array
+        'icons': Array,
+        'height': String,
+        'width': String
+    },
+    computed: {
+      windowHeightWidth () {
+        return {
+          height: this.height,
+          width: this.width
+        }
+      }
+
     }
 }
 </script>
