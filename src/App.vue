@@ -7,12 +7,12 @@
 </template>
 
 <script>
-import Window from './components/Window'
+import WinWindow from './components/Window'
 import DragItDude from '../node_modules/vue-drag-it-dude/dist/vue-drag-it-dude.esm'
 export default {
   name: 'app',
   components: {
-    'window': Window,
+    'window': WinWindow,
     'drag-it-dude': DragItDude
   },
   data () {
